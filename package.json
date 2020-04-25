@@ -1,0 +1,36 @@
+{
+  "name": "ts-express-mongo",
+  "version": "1.0.0",
+  "description": "TypeScript + Node + Express + Mongo DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon --watch 'src/**/*.ts' -e ts,tsx --exec ts-node-dev ./src/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsaakashpatel/ts-express-mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsaakashpatel/ts-express-mongo/issues"
+  },
+  "homepage": "https://github.com/itsaakashpatel/ts-express-mongo#readme",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7",
+    "nodemon": "^2.0.3",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.44"
+  }
+}
